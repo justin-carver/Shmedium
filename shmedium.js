@@ -17,12 +17,11 @@ const getMediumArticles = async (url) => {
             }
         }
     }).catch(function (err) {
-        // There was an error
         console.warn('Something went wrong.', err);
     });
 }
 
-const init = async () => {
+const init = () => {
     let urls = document.querySelectorAll('a');
     for (let i = 0; i < urls.length; i++) {
         if (urls[i].host === 'medium.com') {
