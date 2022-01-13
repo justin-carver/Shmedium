@@ -12,8 +12,8 @@ const getMediumArticles = async (url) => {
                     margin-left: 0.80rem; color: #000; background-color: #ffc017; 
                     border-radius: 5px;`
                 );
-                url.parentElement.append(paywall);
                 url.parentElement.style.width = '120%';
+                url.parentElement.append(paywall);
             }
         }
     }).catch(function (err) {
